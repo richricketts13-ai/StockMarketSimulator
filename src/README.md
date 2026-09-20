@@ -1,18 +1,27 @@
-## Getting Started
+Stock Market Simulator
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A Java project that simulates basic stock ownership and transactions.
 
-## Folder Structure
+Version 1:
+- Created Stock class
+- Created Investor class
+- Investors can buy and sell shares
+- Investors can calculate portfolio value
+- Stock prices can be updated
+- Added validation for invalid transactions/prices
 
-The workspace contains two folders by default, where:
+Concepts practiced:
+- Classes and objects
+- Encapsulation
+- Constructors
+- Instance fields
+- Methods
+- Parameters
+- Getters
+- Object interaction
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Future versions:
+- Random daily price changes
+- Simulation loop
+- Multiple investors
+- Multiple stocks

@@ -26,5 +26,19 @@ public class Stock {
         return this.price;
     }
 
-    
+    public void updatePrice(double newPrice) {
+        if (newPrice <= 0) {
+            return;
+        }
+        this.price = newPrice;
+    } 
+
+    public void updatePriceRandomly() {
+        double min = -0.05;
+        double max = 0.05;
+        double changePercent = min + (Math.random() * (max - min));
+        double newPrice = this.price * (1 + changePercent);
+        updatePrice(newPrice);
+    }
+
 }

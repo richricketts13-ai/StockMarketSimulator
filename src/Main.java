@@ -1,35 +1,23 @@
 public class Main {
     public static void main(String[] args) {
 
-        // Create a stock
+      
         Stock apple = new Stock("Apple", "AAPL", 100.00);
+        Investor investor = new Investor("John Doe", 1000.00);
 
-        // Create an investor
-        Investor investor = new Investor("Richard", 1000.00);
+        System.out.println("Initial price: $" + apple.getPrice());
+       
+       investor.buyShares(apple, 5);
+       System.out.println("Shares owned: " + investor.getSharesOwned());
+       System.out.println("Portfolio value: $" + investor.getPortfolioValue(apple));
 
-        // Initial information
-        System.out.println("Stock: " + apple.getCompanyName());
-        System.out.println("Ticker: " + apple.getTicker());
-        System.out.println("Price: $" + apple.getPrice());
+       for (int i = 0; i < 10; i++) {
+            apple.updatePriceRandomly();
+            System.out.println("Day " + (i + 1));
+            System.out.println("Updated price: $" + apple.getPrice());
+            System.out.println("Portfolio value: $" + investor.getPortfolioValue(apple));
+            
 
-        System.out.println("\nInvestor: " + investor.getName());
-        System.out.println("Starting balance: $" + investor.getBalance());
-        System.out.println("Starting shares: " + investor.getSharesOwned());
-
-        // Buy 4 shares
-        investor.buyShares(apple, 4);
-
-        System.out.println("\nAfter buying 4 shares:");
-        System.out.println("Balance: $" + investor.getBalance());
-        System.out.println("Shares: " + investor.getSharesOwned());
-        System.out.println("Portfolio value: $" + investor.getPortfolioValue(apple));
-
-        // Sell 2 shares
-        investor.sellShares(apple, 2);
-
-        System.out.println("\nAfter selling 2 shares:");
-        System.out.println("Balance: $" + investor.getBalance());
-        System.out.println("Shares: " + investor.getSharesOwned());
-        System.out.println("Portfolio value: $" + investor.getPortfolioValue(apple));
+       }
     }
 }
