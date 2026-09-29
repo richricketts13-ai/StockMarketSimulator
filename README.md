@@ -69,14 +69,19 @@ Day 10
 Updated price: $111.61
 Portfolio value: $1058.05
 
-Future Versions
+## V3 — Multiple Investors
 
-V3 — Multiple Investors
+V3 expands the simulation to support multiple investors interacting with the same stock.
 
-* Multiple investors
-* Different starting balances
-* Investors making independent trades
+### Features
 
+- Multiple independent investors
+- Different starting balances
+- Investors purchasing different numbers of shares
+- Individual portfolio values
+- 10-day multi-investor simulation
+- Final gain/loss calculation
+- Profit, loss, and break-even reporting
 
 Skills Practiced
 
